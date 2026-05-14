@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness Tracker</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+
+        <!-- Website Title -->
+        <h1>Fitness Tracker</h1>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-links">
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+
+            <button onclick="showPage('bmi')">
+                BMI Calculator
+            </button>
+
+            <button onclick="showPage('workout')">
+                Workout Tips
+            </button>
+
+            <button onclick="showPage('contact')">
+                Contact
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page">
+
+        <h2>Welcome to Fitness Tracker</h2>
+
+        <p>
+            Stay healthy and track your fitness journey.
+        </p>
+
+        <!-- Fitness Image -->
+        <img
+        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+        alt="Gym Image">
+
+    </div>
+
+    <!-- BMI PAGE -->
+    <div id="bmi" class="page">
+
+        <h2>BMI Calculator</h2>
+
+        <!-- Height Input -->
+        <input
+        type="number"
+        id="height"
+        placeholder="Enter height in meters"
+        required>
+
+        <br>
+
+        <!-- Weight Input -->
+        <input
+        type="number"
+        id="weight"
+        placeholder="Enter weight in kg"
+        required>
+
+        <br>
+
+        <!-- BMI Button -->
+        <button
+        class="main-btn"
+        onclick="calculateBMI()">
+
+            Calculate BMI
+
+        </button>
+
+        <br><br>
+
+        <!-- Weight Gain Button -->
+        <button
+        class="main-btn"
+        onclick="weightGain()">
+
+            Weight Gain
+
+        </button>
+
+        <!-- Weight Loss Button -->
+        <button
+        class="main-btn"
+        onclick="weightLoss()">
+
+            Weight Loss
+
+        </button>
+
+        <!-- BMI Result -->
+        <h3 id="result"></h3>
+
+        <!-- Calorie Result -->
+        <h3 id="calorie-result"></h3>
+
+    </div>
+
+    <!-- WORKOUT PAGE -->
+    <div id="workout" class="page">
+
+        <h2>Weekly Workout Plan</h2>
+
+        <p>
+            Click any day to view workout routine
+        </p>
+
+        <!-- Workout Buttons -->
+        <div class="day-buttons">
+
+            <button onclick="showWorkout('monday')">
+                Monday
+            </button>
+
+            <button onclick="showWorkout('tuesday')">
+                Tuesday
+            </button>
+
+            <button onclick="showWorkout('wednesday')">
+                Wednesday
+            </button>
+
+            <button onclick="showWorkout('thursday')">
+                Thursday
+            </button>
+
+            <button onclick="showWorkout('friday')">
+                Friday
+            </button>
+
+            <button onclick="showWorkout('saturday')">
+                Saturday
+            </button>
+
+            <button onclick="showWorkout('sunday')">
+                Sunday
+            </button>
+
+        </div>
+
+        <!-- Workout Display -->
+        <div id="workout-plan">
+
+            <h3>
+                Select a day to view workout
+            </h3>
+
+        </div>
+
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+
+        <h2>Contact Us</h2>
+
+        <!-- Name -->
+        <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required>
+
+        <br>
+
+        <!-- Email -->
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required>
+
+        <br>
+
+        <!-- Message -->
+        <textarea
+        id="message"
+        placeholder="Enter your message"
+        required>
+        </textarea>
+
+        <br>
+
+        <!-- Send Button -->
+        <button
+        class="main-btn"
+        onclick="sendMessage()">
+
+            Send Message
+
+        </button>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

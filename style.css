@@ -1,0 +1,223 @@
+/* Removes default spacing */
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body{
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to right, #1f1f1f, #2d2d2d);
+
+    color: white;
+}
+
+/* Navigation Bar */
+nav{
+
+    background-color: #111;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 30px;
+
+    box-shadow: 0 0 10px black;
+}
+
+/* Website Title */
+nav h1{
+
+    color: orange;
+
+    font-size: 45px;
+}
+
+/* Navigation Buttons */
+.nav-links button{
+
+    padding: 10px 15px;
+
+    margin-left: 10px;
+
+    border: none;
+
+    background-color: orange;
+
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links button:hover{
+
+    background-color: darkorange;
+
+    transform: scale(1.1);
+}
+
+/* Pages */
+.page{
+
+    display: none;
+
+    text-align: center;
+
+    padding: 40px;
+
+    animation: fade 0.5s ease;
+}
+
+/* Home Page Visible First */
+#home{
+
+    display: block;
+}
+
+/* Animation */
+@keyframes fade{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* Main Image */
+img{
+
+    width: 65%;
+
+    margin-top: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px black;
+}
+
+/* Input Fields */
+input,
+textarea{
+
+    width: 60%;
+
+    padding: 12px;
+
+    margin: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+/* Main Buttons */
+.main-btn{
+
+    padding: 12px 20px;
+
+    background-color: orange;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.main-btn:hover{
+
+    background-color: darkorange;
+
+    transform: scale(1.05);
+}
+
+/* Workout Buttons */
+.day-buttons button{
+
+    margin: 10px;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: orange;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Workout Hover */
+.day-buttons button:hover{
+
+    background-color: darkorange;
+
+    transform: scale(1.1);
+}
+
+/* Workout Plan Box */
+#workout-plan{
+
+    width: 60%;
+
+    margin: 30px auto;
+
+    background-color: #333;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px black;
+
+    animation: fade 0.5s ease;
+}
+
+/* Result Text */
+#result,
+#calorie-result{
+
+    margin-top: 20px;
+
+    color: orange;
+}
